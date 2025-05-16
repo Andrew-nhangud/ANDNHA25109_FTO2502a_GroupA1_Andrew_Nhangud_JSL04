@@ -26,14 +26,16 @@
       <h2>Launch Career</h2>
     </header>
 
-    <section id="taskModal" class="modal">
-      <article class="modal-content">
+    <!-- Modal: the markup for the modal -->
+    <section id="taskModal" class="modal"><!-- the background container for the modal -->
+      <article class="modal-content"><!-- the container for the modal info -->
         <div class="modal-header">
           <h2>Task</h2>
           <span id="closeModal" class="close-button">&times;</span>
         </div>
+
         <form class="modal-form">
-          <div class="modal-form-divider">
+          <div class="modal-form-divider"><!-- container for dividing the label and textarea in the form -->
             <label for="taskTitle">Title:</label>
             <input class="modal-form-textarea" type="text" id="taskTitle" name="taskTitle" required>
           </div>
@@ -54,6 +56,7 @@
           </div>
           <button type="submit" id="saveTask">Save</button>
         </form>
+
       </article>
     </section>
 

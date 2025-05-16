@@ -89,7 +89,20 @@ body {
   border-radius: 5px;
   border: 1px solid #8b8585;
 }
-
+#saveTask{ /* styles ofr the saving button */
+  height: 48px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--accent-clr);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--secondary-clr);
+  }
+#saveTask:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(15, 15, 15, 0.6);
+  background-color: var(--primary-clr);
+}
 /* styles for the side bar */
 .side-bar {
   display: none;

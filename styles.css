@@ -42,6 +42,26 @@ body {
   left: 12px;
   border-radius: 6px;
 }
+.modal-content h2{
+  font-size: 18px;
+  font-size: 700;
+  color: var(--primary-clr);
+}
+.close-button {
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.close-button:hover,
+.close-button:focus {/* hover effects for the save button */
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* styles for the side bar */
 .side-bar {

@@ -190,6 +190,11 @@ body {
   body {
     display: flex;
   }
+  /* modal container styles */
+   .modal-content{
+    left: 250px;
+    width: 400px;
+  }
   .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -247,6 +252,14 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+
+  /* styles for the modal container */
+    .modal-content{
+    width: 500px;
+    height: 455px;
+    left: 450px;
+    top: -80px;
   }
 
   /* side bar styles */

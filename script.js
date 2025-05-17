@@ -103,3 +103,17 @@ function renderTasks() {
     }
   }
 }
+// Function to open the modal
+function openModal(task) {
+  const modal = document.getElementById("taskModal");
+  modal.dataset.taskIndex = tasks.indexOf(task);
+  document.getElementById("taskTitle").value = task.title;
+  document.getElementById("taskDescription").value = task.description;
+  document.getElementById("taskStatus").value = task.status;
+  modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("taskModal").style.display = "none";
+}

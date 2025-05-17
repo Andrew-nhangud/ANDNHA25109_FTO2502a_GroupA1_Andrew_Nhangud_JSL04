@@ -78,3 +78,28 @@ function createTaskElement(task) {
 
   return li;
 }
+// Function to render tasks in the DOM
+function renderTasks() {
+  const lists = {
+    todo: document.querySelector('[data-status="todo"] .task-list'),
+    doing: document.querySelector('[data-status="doing"] .task-list'),
+    done: document.querySelector('[data-status="done"] .task-list'),
+  };
+
+  // Clear all lists
+  for (let key in lists) {
+    lists[key].innerHTML = "";
+  }
+
+  // Add tasks to the appropriate list
+  for (let i = 0; i < tasks.length; i++) {
+    const taskElement = createTaskElement(tasks[i]);
+    if (tasks[i].status === "todo") {
+      lists.todo.appendChild(taskElement);
+    } else if (tasks[i].status === "doing") {
+      lists.doing.appendChild(taskElement);
+    } else if (tasks[i].status === "done") {
+      lists.done.appendChild(taskElement);
+    }
+  }
+}

@@ -66,3 +66,15 @@ const tasks = [
     status: "done",
   },
 ];
+// Function to create a task element
+function createTaskElement(task) {
+  const li = document.createElement("li");
+  li.className = "task-card";
+  li.innerText = task.title;
+
+  li.onclick = function () {
+    openModal(task);
+  };
+
+  return li;
+}

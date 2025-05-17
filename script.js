@@ -130,3 +130,9 @@ function handleFormSubmit(event) {
   closeModal();
   renderTasks();
 }
+// Event listeners
+document.getElementById("closeModal").onclick = closeModal;
+document.querySelector(".modal-form").onsubmit = handleFormSubmit;
+
+// Initial rendering of tasks
+renderTasks();

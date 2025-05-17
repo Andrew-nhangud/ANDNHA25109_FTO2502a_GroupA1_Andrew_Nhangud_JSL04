@@ -117,3 +117,16 @@ function openModal(task) {
 function closeModal() {
   document.getElementById("taskModal").style.display = "none";
 }
+// Function to handle form submission
+function handleFormSubmit(event) {
+  event.preventDefault();
+  const modal = document.getElementById("taskModal");
+  const taskIndex = modal.dataset.taskIndex;
+  tasks[taskIndex].title = document.getElementById("taskTitle").value;
+  tasks[taskIndex].description =
+    document.getElementById("taskDescription").value;
+  tasks[taskIndex].status = document.getElementById("taskStatus").value;
+
+  closeModal();
+  renderTasks();
+}

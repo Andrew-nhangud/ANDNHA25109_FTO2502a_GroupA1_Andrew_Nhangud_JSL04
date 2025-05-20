@@ -66,6 +66,7 @@ const tasks = [
     status: "done",
   },
 ];
+
 // Function to create a task element
 function createTaskElement(task) {
   const li = document.createElement("li");
@@ -78,6 +79,7 @@ function createTaskElement(task) {
 
   return li;
 }
+
 // Function to render tasks in the DOM
 function renderTasks() {
   const lists = {
@@ -103,6 +105,7 @@ function renderTasks() {
     }
   }
 }
+
 // Function to open the modal
 function openModal(task) {
   const modal = document.getElementById("taskModal");
@@ -117,6 +120,7 @@ function openModal(task) {
 function closeModal() {
   document.getElementById("taskModal").style.display = "none";
 }
+
 // Function to handle form submission
 function handleFormSubmit(event) {
   event.preventDefault();
@@ -130,6 +134,7 @@ function handleFormSubmit(event) {
   closeModal();
   renderTasks();
 }
+
 // Event listeners
 document.getElementById("closeModal").onclick = closeModal;
 document.querySelector(".modal-form").onsubmit = handleFormSubmit;
